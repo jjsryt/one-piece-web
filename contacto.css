@@ -12,8 +12,14 @@ h1 {
     text-shadow: 2px 2px 5px black;
 }
 
+/* Contenedor para hacer la tabla responsive */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
 table {
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
     border-collapse: collapse;
     background: #1e3a8a;
@@ -50,4 +56,21 @@ tr:hover {
 
 .btn:hover {
     background-color: #ff6347;
+}
+
+/* Responsive para dispositivos móviles */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
 }
